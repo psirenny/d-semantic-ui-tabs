@@ -1,0 +1,26 @@
+{
+  "author": "Dennis Torres <djtorres0@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/psirenny/d-semantic-ui-tabs/issues"
+  },
+  "description": "Derby JS semantic UI tabs component.",
+  "keywords": [
+    "component",
+    "derby",
+    "semantic",
+    "tabs",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "d-semantic-ui-tabs",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psirenny/d-semantic-ui-tabs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

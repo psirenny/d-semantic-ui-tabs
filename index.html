@@ -1,0 +1,10 @@
+<index: element="tabs" arrays="item/items">
+  <nav class="ui menu {{if pointing}}pointing{{/}} {{if secondary}}secondary{{/}}">
+    {{each @items as #item, #i}}
+    {{if tab === (#item.name || #item.text)}}
+    <span class="item active">{{#item.text || #item.name}}</span>
+    {{else}}
+    <a class="item" on-click="tab(#item.name || #item.text)">{{#item.text || #item.name}}</a>
+    {{/}}
+    {{/}}
+  </nav>
