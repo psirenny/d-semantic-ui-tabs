@@ -3,18 +3,20 @@ function Component() {}
 Component.prototype.view = __dirname;
 
 Component.prototype.init = function (model) {
-  model.start('tab', '_tab', 'defaultTab', {
-    get: function (_tab, defaultTab) {
-      return _tab || defaultTab;
+  model.setNull('defaultValue', model.get('value'));
+
+  model.start('value', '_value', 'defaultValue', {
+    get: function (_value, defaultValue) {
+      return _value || defaultValue;
     },
-    set: function (tab, _tab, defaultTab) {
-      return [tab, defaultTab];
+    set: function (value, _value, defaultValue) {
+      return [value, defaultValue];
     }
   });
 };
 
-Component.prototype.tab = function (name) {
-  this.model.set('tab', name);
+Component.prototype.select = function (value) {
+  this.model.set('value', value);
 };
 
 module.exports = Component;
